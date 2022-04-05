@@ -1,0 +1,397 @@
+/*
+ Theme Name:   Cinic Bike Gear
+ Theme URI:    https://cinicbikegear.com
+ Description:  Cinic Bike Gear Store Front Theme
+ Author:       Nick Carlson
+ Author URI:   https://ncarlsondesign.com/
+ Template:     storefront
+ Version:      1.0.0
+*/
+
+@import url("../storefront/style.css");
+
+
+/******
+Typography
+******/
+
+h1, h2, h3, h4, h5, a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+}
+
+p, li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/******
+Typography
+******/
+/******
+Overall Site Width
+******/
+body.woocommerce #primary {
+	float: none;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+  .col-full {
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-full {
+    margin: 0px;
+  }
+
+  .text-width-960 {
+    padding: 20px;
+  }
+
+}
+
+.site {
+  overflow: hidden;
+}
+
+.text-width-960 {
+  max-width: 960px;
+  margin: auto;
+}
+
+
+
+/******
+Overall Site Width
+******/
+/******
+Header Styling
+******/
+
+
+.site-header {
+  background-color: rgb(0, 174, 239);
+  padding: 150px 0px 0px 10%;
+  margin: -100px -20px;
+  border-bottom: solid 20px black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  transform: rotate(-4deg);
+}
+
+.woocommerce-active .site-header .site-branding img {
+  max-width: 200px;
+}
+
+.site-branding {
+  margin-bottom: 20px;
+
+}
+
+#menu-secondary-menu, .site-search {
+  display: none;
+} /*Look Here If The Search In The Footer Is Not Showing Up*/
+
+.storefront-primary-navigation {
+  margin-left: 45%;
+}
+
+#menu-primary-menu {
+  display: flex;
+}
+
+#menu-primary-menu li a {
+  font-size: 1.7em;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 1490px) {
+  .storefront-primary-navigation {
+    margin-left: 30%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .storefront-primary-navigation {
+    margin-left: 15%;
+  }
+}
+
+/*Small Screen Menu Styling, Small Screen hamburger Menu*/
+
+@media (max-width: 750px) {
+  .storefront-primary-navigation {
+    margin-left: 0;
+  }
+  button.menu-toggle {
+    background-color: rgb(0, 174, 239);
+    margin-right: 20px;
+    font-size: 2em;
+  }
+
+  button.menu-toggle span::before, button.menu-toggle::after, button.menu-toggle::before {
+    width: 30px;
+    height: 3px;
+    margin-top: 2px;
+  }
+}
+
+/******
+Header Styling
+******/
+/******
+Home page Content section
+******/
+
+.site-main {
+  margin-top: 20px;
+}
+
+.post-58 {
+  border-bottom: solid 20px black;
+}
+
+.entry-title {
+  display: none;
+}
+
+.home-welcome-logo {
+  margin: 20px auto 50px auto;
+}
+
+.home-welcome-intro {
+  padding-top: 100px;
+  color: white;
+}
+
+.home-welcome-intro h2, .home-welcome-intro p {
+  color: white;
+}
+
+@media (max-width: 1500px) {
+  .home-welcome-intro img {
+    max-width: 70%;
+  }
+}
+
+
+/*Trail features section*/
+
+.home-trail-title {
+  text-align: center;
+}
+
+.home-trail-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(https://cinicbikegear.com/wp-content/uploads/2018/08/hero-img-2.jpg);
+  padding: 20px;
+  border-bottom: solid 20px black;
+  max-height: 960px;
+}
+
+.home-trail-box {
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-left: 60%;
+  padding: 20px;
+}
+
+.home-trail-img {
+  margin: auto;
+}
+
+.home-trail-text {
+  color: white;
+}
+
+@media (max-width: 1100px) {
+  .home-trail-box {
+    margin-left: auto;
+
+  }
+}
+
+@media (max-width: 750px) {
+  .home-trail-box {
+    margin: auto;
+    width: auto;
+  }
+}
+
+/*Home page feature video styling*/
+
+
+.home-trail-video {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.home-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+  background-image: url(https://cinicbikegear.com/wp-content/uploads/2018/09/checkerboard.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: solid 20px black;
+}
+
+.home-video-text {
+  color: white;
+  padding: 20px;
+}
+
+.home-video-video {
+
+  height: 100%;
+  width:45%;
+  padding: 20px;
+}
+
+@media (max-width: 750px) {
+  .home-video {
+    flex-direction: column;
+  }
+
+  .home-video-video {
+    height: 50%;
+    width: auto;
+  }
+}
+
+/******
+Home Page Content section
+******/
+
+/******
+Shop Page Content section
+******/
+
+.post-type-archive .site .site-content .col-full {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/******
+Shop Page Content section
+******/
+
+/******
+Product Item Styling
+******/
+
+.woocommerce-tabs {
+  max-width: 960px;
+  margin: auto;
+}
+
+/******
+Product Item Styling
+******/
+/******
+About Page Styling
+******/
+
+.hentry .wp-post-image {
+  width: 100%;
+  margin-top: -110px;
+}
+
+@media (max-width: 750px) {
+  .hentry .wp-post-image {
+    margin-top: -5%;
+  }
+}
+/******
+About Page Styling
+******/
+/******
+Contact Page styling
+******/
+
+.post-60 {
+  margin-top: 100px;
+}
+
+.content-statment {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+/******
+Contact Page styling
+******/
+
+/******
+Blog Page styling
+******/
+.post {
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+/******
+Blog Page styling
+******/
+
+/******
+Privacy Policy Page styling
+******/
+
+.pp-margin {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/******
+Privacy Policy styling
+******/
+
+/******
+Footer Styling section
+******/
+
+.site-footer {
+  background-color: rgb(0, 174, 239);
+  padding-left: 10%;
+  padding-right: 10%;
+  border-top: solid 20px black;
+  color: black;
+}
+
+.widgit-title {
+  font-weight: 700 !important;
+}
+
+.footer-widgets, .widget .widget-title  {
+  border-bottom: 2px solid black;
+}
+
+.gamma {
+  font-weight: 700 !important;
+}
+
+.site-info {
+  text-align: center;
+}
+
+.site-info a {
+  display: none;
+}
+
+.widget_nav_menu ul li::before {
+  display: none;
+}
+
+/******
+Footer Styling section
+******/
