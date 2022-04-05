@@ -1,0 +1,76 @@
+@import 'variables';
+/******
+Header Styling
+******/
+
+
+.site-header {
+    background-color: $cinic-blue;
+    padding: 125px 10% 20px 10%;
+    margin: -100px -20px;
+    border-bottom: solid 20px $black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::before, &::after {
+        display: none;
+    }
+
+    .header-logo {
+        width: 90px;
+    }
+
+    #site-navigation {
+        width: auto !important;
+
+        button {
+            background-color: $cinic-blue;
+        }
+    }
+
+    .nav-cart-wrapper {
+        display: flex;
+        align-items: center;
+
+        .nav-cart {
+            font-size: .75rem;
+
+            .amount {
+                display: block;
+            }
+          }
+    }
+
+    #menu-primary-menu {
+        display: flex;
+
+        li a {
+            font-size: 1.7em;
+        }
+    }
+
+    @media screen and (min-width: $tablet-large) {
+        transform: rotate(-4deg);
+    }    
+  }
+
+  
+  /*Small Screen Menu Styling, Small Screen hamburger Menu*/
+  
+//   @media (max-width: 750px) {
+//     .storefront-primary-navigation {
+//       margin-left: 0;
+//     }
+//     button.menu-toggle {
+//       background-color: $cinic-blue;
+//       margin-right: 20px;
+//       font-size: 2em;
+//     }
+  
+//     button.menu-toggle span::before, button.menu-toggle::after, button.menu-toggle::before {
+//       width: 30px;
+//       height: 3px;
+//       margin-top: 2px;
+//     }
+//   }
