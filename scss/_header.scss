@@ -1,8 +1,4 @@
 @import 'variables';
-/******
-Header Styling
-******/
-
 
 .site-header {
     background-color: $cinic-blue;
@@ -18,7 +14,7 @@ Header Styling
     }
 
     .header-logo {
-        width: 90px;
+        width: 30px;
     }
 
     #site-navigation {
@@ -29,17 +25,21 @@ Header Styling
         }
     }
 
+    .handheld-navigation {
+        position: absolute;
+        background-color: $cinic-blue;
+        padding: 0 20px 0 20px;
+        right: 20px;
+        top: 160px;
+    }
+
     .nav-cart-wrapper {
         display: flex;
         align-items: center;
+    }
 
-        .nav-cart {
-            font-size: .75rem;
-
-            .amount {
-                display: block;
-            }
-          }
+    .nav-cart {
+        display: none;
     }
 
     #menu-primary-menu {
@@ -52,25 +52,18 @@ Header Styling
 
     @media screen and (min-width: $tablet-large) {
         transform: rotate(-4deg);
+
+        .header-logo {
+            width: 90px;
+        }
+
+        .nav-cart {
+            font-size: .75rem;
+            display: block;
+
+            .amount {
+                display: block;
+            }
+          }
     }    
   }
-
-  
-  /*Small Screen Menu Styling, Small Screen hamburger Menu*/
-  
-//   @media (max-width: 750px) {
-//     .storefront-primary-navigation {
-//       margin-left: 0;
-//     }
-//     button.menu-toggle {
-//       background-color: $cinic-blue;
-//       margin-right: 20px;
-//       font-size: 2em;
-//     }
-  
-//     button.menu-toggle span::before, button.menu-toggle::after, button.menu-toggle::before {
-//       width: 30px;
-//       height: 3px;
-//       margin-top: 2px;
-//     }
-//   }

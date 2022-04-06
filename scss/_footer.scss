@@ -1,0 +1,33 @@
+@import 'variables';
+
+.site-footer {
+    background-color: rgb(0, 174, 239);
+    padding-left: 10%;
+    padding-right: 10%;
+    border-top: solid 20px black;
+    color: black;
+  }
+  
+  .widgit-title {
+    font-weight: 700 !important;
+  }
+  
+  .footer-widgets, .widget .widget-title  {
+    border-bottom: 2px solid black;
+  }
+  
+  .gamma {
+    font-weight: 700 !important;
+  }
+  
+  .site-info {
+    text-align: center;
+  }
+
+  .widget_nav_menu ul li {
+      padding-left: 0;
+  }
+  
+  .site-info span, .site-info a, br, .widget_nav_menu ul li::before {
+    display: none;
+  }

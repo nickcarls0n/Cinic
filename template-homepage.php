@@ -47,11 +47,13 @@ get_header(); ?>
 			<h2>Videos From The Trail</h2>
 		</div>
 		<div class="home-video">
-			<div class="home-video-text">
-				<?php the_field('video_feature_text')?>
-			</div>
-			<div class="home-video-video">
-				<?php the_field('video_feature')?>
+			<div class="home-video-content">
+				<div class="home-video-text">
+					<?php the_field('video_feature_text')?>
+				</div>
+				<div class="home-video-video">
+					<?php the_field('video_feature')?>
+				</div>
 			</div>
 		</div>
 	</div><!-- #primary -->

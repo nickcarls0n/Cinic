@@ -66,120 +66,12 @@ body.woocommerce #primary {
 }
 
 /******
-Home page Content section
+Storefront Override
 ******/
-.site-main {
-  margin-top: 20px;
+a:focus, button:focus {
+  outline: none !important;
 }
 
-.post-58 {
-  border-bottom: solid 20px black;
-}
-
-.entry-title {
-  display: none;
-}
-
-.home-welcome-logo {
-  margin: 20px auto 50px auto;
-}
-
-.home-welcome-intro {
-  padding-top: 100px;
-  color: white;
-}
-
-.home-welcome-intro h2, .home-welcome-intro p {
-  color: white;
-}
-
-@media (max-width: 1500px) {
-  .home-welcome-intro img {
-    max-width: 70%;
-  }
-}
-/*Trail features section*/
-.home-trail-title {
-  text-align: center;
-}
-
-.home-trail-features {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  background-image: url(https://cinicbikegear.com/wp-content/uploads/2018/08/hero-img-2.jpg);
-  padding: 20px;
-  border-bottom: solid 20px black;
-  max-height: 960px;
-}
-
-.home-trail-box {
-  width: 400px;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin-left: 60%;
-  padding: 20px;
-}
-
-.home-trail-img {
-  margin: auto;
-}
-
-.home-trail-text {
-  color: white;
-}
-
-@media (max-width: 1100px) {
-  .home-trail-box {
-    margin-left: auto;
-  }
-}
-@media (max-width: 750px) {
-  .home-trail-box {
-    margin: auto;
-    width: auto;
-  }
-}
-/*Home page feature video styling*/
-.home-trail-video {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.home-video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 650px;
-  background-image: url(https://cinicbikegear.com/wp-content/uploads/2018/09/checkerboard.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-bottom: solid 20px black;
-}
-
-.home-video-text {
-  color: white;
-  padding: 20px;
-}
-
-.home-video-video {
-  height: 100%;
-  width: 45%;
-  padding: 20px;
-}
-
-@media (max-width: 750px) {
-  .home-video {
-    flex-direction: column;
-  }
-
-  .home-video-video {
-    height: 50%;
-    width: auto;
-  }
-}
-/******
-Home Page Content section
-******/
 /******
 Shop Page Content section
 ******/
@@ -257,7 +149,213 @@ Privacy Policy Page styling
 Privacy Policy styling
 ******/
 /******
-Footer Styling section
+Colors
+******/
+/******
+Break Points
+******/
+.site-header {
+  background-color: rgb(0, 174, 239);
+  padding: 125px 10% 20px 10%;
+  margin: -100px -20px;
+  border-bottom: solid 20px black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-header::before, .site-header::after {
+  display: none;
+}
+.site-header .header-logo {
+  width: 30px;
+}
+.site-header #site-navigation {
+  width: auto !important;
+}
+.site-header #site-navigation button {
+  background-color: rgb(0, 174, 239);
+}
+.site-header .handheld-navigation {
+  position: absolute;
+  background-color: rgb(0, 174, 239);
+  padding: 0 20px 0 20px;
+  right: 20px;
+  top: 160px;
+}
+.site-header .nav-cart-wrapper {
+  display: flex;
+  align-items: center;
+}
+.site-header .nav-cart {
+  display: none;
+}
+.site-header #menu-primary-menu {
+  display: flex;
+}
+.site-header #menu-primary-menu li a {
+  font-size: 1.7em;
+}
+@media screen and (min-width: 768px) {
+  .site-header {
+    transform: rotate(-4deg);
+  }
+  .site-header .header-logo {
+    width: 90px;
+  }
+  .site-header .nav-cart {
+    font-size: 0.75rem;
+    display: block;
+  }
+  .site-header .nav-cart .amount {
+    display: block;
+  }
+}
+
+/******
+Colors
+******/
+/******
+Break Points
+******/
+.site-main {
+  margin-top: 20px;
+}
+
+#post-58 {
+  border-bottom: solid 20px black;
+  padding-top: 2.617924em;
+}
+
+.entry-title {
+  display: none;
+}
+
+.home-welcome-logo {
+  margin: 20px auto 50px auto;
+}
+
+.home-welcome-intro {
+  padding-top: 100px;
+  color: white;
+  margin: 0 10%;
+}
+
+.home-welcome-intro h2, .home-welcome-intro p {
+  color: white;
+}
+
+@media (max-width: 1500px) {
+  .home-welcome-intro img {
+    max-width: 70%;
+  }
+}
+/*New In section*/
+.storefront-recent-products {
+  margin: 0 10%;
+}
+
+/*Trail features section*/
+.home-trail-title {
+  text-align: center;
+}
+
+.home-trail-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url(https://cinicbikegear.com/wp-content/uploads/2018/08/hero-img-2.jpg);
+  padding: 10%;
+  border-bottom: solid 20px black;
+  margin-bottom: 67.7px;
+  max-height: 960px;
+}
+
+.home-trail-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-left: auto;
+  max-width: 470px;
+}
+@media screen and (min-width: 768px) {
+  .home-trail-box {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .home-trail-box {
+    margin-left: 60%;
+  }
+}
+
+.home-trail-img {
+  margin: auto;
+}
+
+.home-trail-text {
+  color: white;
+}
+
+/*Home page feature video styling*/
+.home-trail-video {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.home-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 650px;
+  background-image: url(https://cinicbikegear.com/wp-content/uploads/2018/09/checkerboard.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+}
+@media screen and (min-width: 768px) {
+  .home-video {
+    flex-direction: column;
+  }
+}
+
+.home-video-content {
+  padding: 0 10%;
+}
+@media screen and (min-width: 768px) {
+  .home-video-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.home-video-text {
+  color: white;
+  padding: 20px 0;
+}
+@media screen and (min-width: 768px) {
+  .home-video-text {
+    margin-right: 40px;
+  }
+}
+
+.home-video-video {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .home-video-video {
+    height: 50%;
+    width: 45%;
+    width: auto;
+  }
+}
+
+/******
+Colors
+******/
+/******
+Break Points
 ******/
 .site-footer {
   background-color: rgb(0, 174, 239);
@@ -283,69 +381,12 @@ Footer Styling section
   text-align: center;
 }
 
-.site-info a {
-  display: none;
+.widget_nav_menu ul li {
+  padding-left: 0;
 }
 
-.widget_nav_menu ul li::before {
+.site-info span, .site-info a, br, .widget_nav_menu ul li::before {
   display: none;
 }
-
-/******
-Footer Styling section
-******/
-/******
-Colors
-******/
-/******
-Break Points
-******/
-/******
-Header Styling
-******/
-.site-header {
-  background-color: rgb(0, 174, 239);
-  padding: 125px 10% 20px 10%;
-  margin: -100px -20px;
-  border-bottom: solid 20px black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.site-header::before, .site-header::after {
-  display: none;
-}
-.site-header .header-logo {
-  width: 90px;
-}
-.site-header #site-navigation {
-  width: auto !important;
-}
-.site-header #site-navigation button {
-  background-color: rgb(0, 174, 239);
-}
-.site-header .nav-cart-wrapper {
-  display: flex;
-  align-items: center;
-}
-.site-header .nav-cart-wrapper .nav-cart {
-  font-size: 0.75rem;
-}
-.site-header .nav-cart-wrapper .nav-cart .amount {
-  display: block;
-}
-.site-header #menu-primary-menu {
-  display: flex;
-}
-.site-header #menu-primary-menu li a {
-  font-size: 1.7em;
-}
-@media screen and (min-width: 768px) {
-  .site-header {
-    transform: rotate(-4deg);
-  }
-}
-
-/*Small Screen Menu Styling, Small Screen hamburger Menu*/
 
 /*# sourceMappingURL=style.css.map */
