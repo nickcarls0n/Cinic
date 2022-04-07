@@ -27,7 +27,7 @@
     color: $white;
   }
   
-  @media (max-width: $desktop-large) {
+  @media screen and (max-width: $desktop-large) {
     .home-welcome-intro img {
       max-width: 70%;
     }
@@ -42,7 +42,7 @@
   /*Trail features section*/
   
   .home-trail-title {
-    text-align: center;
+    margin-left: 10%;
   }
   
   .home-trail-features {
@@ -82,8 +82,7 @@
   /*Home page feature video styling*/
   
   .home-trail-video {
-    text-align: center;
-    margin-top: 20px;
+    margin: 20px 10% 0 10%;
   }
   
   .home-video {

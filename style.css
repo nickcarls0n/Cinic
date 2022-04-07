@@ -72,17 +72,11 @@ a:focus, button:focus {
   outline: none !important;
 }
 
-/******
-Shop Page Content section
-******/
-.post-type-archive .site .site-content .col-full {
-  margin-left: 10%;
-  margin-right: 10%;
+.entry-content {
+  margin: 100px 10% 0 10%;
+  max-width: 960px;
 }
 
-/******
-Shop Page Content section
-******/
 /******
 Product Item Styling
 ******/
@@ -91,63 +85,6 @@ Product Item Styling
   margin: auto;
 }
 
-/******
-Product Item Styling
-******/
-/******
-About Page Styling
-******/
-.hentry .wp-post-image {
-  width: 100%;
-  margin-top: -110px;
-}
-
-@media (max-width: 750px) {
-  .hentry .wp-post-image {
-    margin-top: -5%;
-  }
-}
-/******
-About Page Styling
-******/
-/******
-Contact Page styling
-******/
-.post-60 {
-  margin-top: 100px;
-}
-
-.content-statment {
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
-}
-
-/******
-Contact Page styling
-******/
-/******
-Blog Page styling
-******/
-.post {
-  margin-top: 100px;
-  margin-left: 20px;
-}
-
-/******
-Blog Page styling
-******/
-/******
-Privacy Policy Page styling
-******/
-.pp-margin {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-/******
-Privacy Policy styling
-******/
 /******
 Colors
 ******/
@@ -163,11 +100,22 @@ Break Points
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .site-header {
+    transform: rotate(-4deg);
+    padding-bottom: 0;
+  }
+}
 .site-header::before, .site-header::after {
   display: none;
 }
 .site-header .header-logo {
   width: 30px;
+}
+@media screen and (min-width: 768px) {
+  .site-header .header-logo {
+    width: 90px;
+  }
 }
 .site-header #site-navigation {
   width: auto !important;
@@ -189,26 +137,23 @@ Break Points
 .site-header .nav-cart {
   display: none;
 }
+@media screen and (min-width: 768px) {
+  .site-header .nav-cart {
+    font-size: 0.75rem;
+    display: block;
+  }
+  .site-header .nav-cart span {
+    white-space: nowrap;
+  }
+  .site-header .nav-cart .amount {
+    display: block;
+  }
+}
 .site-header #menu-primary-menu {
   display: flex;
 }
 .site-header #menu-primary-menu li a {
   font-size: 1.7em;
-}
-@media screen and (min-width: 768px) {
-  .site-header {
-    transform: rotate(-4deg);
-  }
-  .site-header .header-logo {
-    width: 90px;
-  }
-  .site-header .nav-cart {
-    font-size: 0.75rem;
-    display: block;
-  }
-  .site-header .nav-cart .amount {
-    display: block;
-  }
 }
 
 /******
@@ -244,7 +189,7 @@ Break Points
   color: white;
 }
 
-@media (max-width: 1500px) {
+@media screen and (max-width: 1500px) {
   .home-welcome-intro img {
     max-width: 70%;
   }
@@ -256,7 +201,7 @@ Break Points
 
 /*Trail features section*/
 .home-trail-title {
-  text-align: center;
+  margin-left: 10%;
 }
 
 .home-trail-features {
@@ -297,8 +242,7 @@ Break Points
 
 /*Home page feature video styling*/
 .home-trail-video {
-  text-align: center;
-  margin-top: 20px;
+  margin: 20px 10% 0 10%;
 }
 
 .home-video {
@@ -351,6 +295,51 @@ Break Points
   }
 }
 
+/******
+Colors
+******/
+/******
+Break Points
+******/
+.post-type-archive .site .site-content .col-full {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.woocommerce-products-header {
+  margin-top: 100px;
+}
+
+.storefront-sorting ~ .storefront-sorting {
+  opacity: 0;
+}
+
+/******
+Colors
+******/
+/******
+Break Points
+******/
+.product {
+  margin: 100px 10% 0 10%;
+}
+
+/******
+Colors
+******/
+/******
+Break Points
+******/
+.hentry .wp-post-image {
+  width: 100%;
+  margin-top: -110px;
+}
+
+@media (max-width: 750px) {
+  .hentry .wp-post-image {
+    margin-top: -5%;
+  }
+}
 /******
 Colors
 ******/

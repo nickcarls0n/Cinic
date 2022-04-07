@@ -33,7 +33,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 		<div class="home-trail-title">
-			<h2>Trail Features</h2>
+			<!-- <h2>Trail Features</h2> -->
 		</div>
 		<div class="home-trail-features">
 			<div class="home-trail-box">
@@ -44,7 +44,7 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="home-trail-video">
-			<h2>Videos From The Trail</h2>
+			<!-- <h2>Videos From The Trail</h2> -->
 		</div>
 		<div class="home-video">
 			<div class="home-video-content">
