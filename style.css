@@ -162,6 +162,10 @@ Colors
 /******
 Break Points
 ******/
+#primary {
+  margin-bottom: 0 !important;
+}
+
 .site-main {
   margin-top: 20px;
 }
@@ -211,7 +215,6 @@ Break Points
   background-image: url(https://cinicbikegear.com/wp-content/uploads/2018/08/hero-img-2.jpg);
   padding: 10%;
   border-bottom: solid 20px black;
-  margin-bottom: 67.7px;
   max-height: 960px;
 }
 
@@ -242,7 +245,7 @@ Break Points
 
 /*Home page feature video styling*/
 .home-trail-video {
-  margin: 20px 10% 0 10%;
+  margin: 0 10%;
 }
 
 .home-video {
@@ -253,7 +256,6 @@ Break Points
   background-image: url(https://cinicbikegear.com/wp-content/uploads/2018/09/checkerboard.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 100px;
 }
 @media screen and (min-width: 768px) {
   .home-video {
