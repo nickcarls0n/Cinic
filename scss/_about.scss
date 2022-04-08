@@ -1,0 +1,13 @@
+@import 'variables';
+
+.hentry .wp-post-image {
+    width: 100%;
+    margin-top: -110px;
+  }
+  
+  @media (max-width: 750px) {
+    .hentry .wp-post-image {
+      margin-top: -5%;
+    }
+  }
+  

@@ -1,0 +1,68 @@
+@import 'variables';
+
+/******
+Typography
+******/
+
+h1, h2, h3, h4, h5, a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+}
+
+p, li {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/******
+Overall Site Width
+******/
+body.woocommerce #primary {
+	float: none;
+	width: 100%;
+}
+
+@media (min-width:$tablet-large) {
+  .col-full {
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+@media (max-width: $tablet-large) {
+  .col-full {
+    margin: 0px;
+  }
+
+  .text-width-960 {
+    padding: 20px;
+  }
+
+}
+
+.site {
+  overflow: hidden;
+}
+
+.text-width-960 {
+  max-width: 960px;
+  margin: auto;
+}
+
+/******
+Storefront Override
+******/
+
+a:focus, button:focus {
+  outline: none !important;
+}
+
+.entry-content {
+  margin: 100px 10% 0 10%;
+  max-width: 960px;
+}
+
+.woocommerce-tabs {
+  max-width: 960px;
+  margin: auto;
+}

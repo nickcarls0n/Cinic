@@ -7,32 +7,37 @@
  Template:     storefront
  Version:      1.0.0
 */
-
 @import url("../storefront/style.css");
-
-
+/******
+Colors
+******/
+/******
+Break Points
+******/
+/******
+Colors
+******/
+/******
+Break Points
+******/
 /******
 Typography
 ******/
-
 h1, h2, h3, h4, h5, a {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
 }
 
 p, li {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-/******
-Typography
-******/
 /******
 Overall Site Width
 ******/
 body.woocommerce #primary {
-	float: none;
-	width: 100%;
+  float: none;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -42,7 +47,6 @@ body.woocommerce #primary {
     padding: 0px;
   }
 }
-
 @media (max-width: 768px) {
   .col-full {
     margin: 0px;
@@ -51,9 +55,7 @@ body.woocommerce #primary {
   .text-width-960 {
     padding: 20px;
   }
-
 }
-
 .site {
   overflow: hidden;
 }
@@ -63,97 +65,111 @@ body.woocommerce #primary {
   margin: auto;
 }
 
+/******
+Storefront Override
+******/
+a:focus, button:focus {
+  outline: none !important;
+}
 
+.entry-content {
+  margin: 100px 10% 0 10%;
+  max-width: 960px;
+}
+
+.woocommerce-tabs {
+  max-width: 960px;
+  margin: auto;
+}
 
 /******
-Overall Site Width
+Colors
 ******/
 /******
-Header Styling
+Break Points
 ******/
-
-
 .site-header {
   background-color: rgb(0, 174, 239);
-  padding: 150px 0px 0px 10%;
+  padding: 125px 10% 20px 10%;
   margin: -100px -20px;
   border-bottom: solid 20px black;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  transform: rotate(-4deg);
+  justify-content: space-between;
+  align-items: center;
 }
-
-.woocommerce-active .site-header .site-branding img {
-  max-width: 200px;
+@media screen and (min-width: 768px) {
+  .site-header {
+    transform: rotate(-4deg);
+    padding-bottom: 0;
+  }
 }
-
-.site-branding {
-  margin-bottom: 20px;
-
-}
-
-#menu-secondary-menu, .site-search {
+.site-header::before, .site-header::after {
   display: none;
-} /*Look Here If The Search In The Footer Is Not Showing Up*/
-
-.storefront-primary-navigation {
-  margin-left: 45%;
 }
-
-#menu-primary-menu {
+.site-header .header-logo {
+  width: 30px;
+}
+@media screen and (min-width: 768px) {
+  .site-header .header-logo {
+    width: 90px;
+  }
+}
+.site-header #site-navigation {
+  width: auto !important;
+}
+.site-header #site-navigation button {
+  background-color: rgb(0, 174, 239);
+}
+.site-header .handheld-navigation {
+  position: absolute;
+  background-color: rgb(0, 174, 239);
+  padding: 0 20px 0 20px;
+  right: 20px;
+  top: 160px;
+}
+.site-header .nav-cart-wrapper {
+  display: flex;
+  align-items: center;
+}
+.site-header .nav-cart {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .site-header .nav-cart {
+    font-size: 0.75rem;
+    display: block;
+  }
+  .site-header .nav-cart span {
+    white-space: nowrap;
+  }
+  .site-header .nav-cart .amount {
+    display: block;
+  }
+}
+.site-header #menu-primary-menu {
   display: flex;
 }
-
-#menu-primary-menu li a {
+.site-header #menu-primary-menu li a {
   font-size: 1.7em;
-  padding-bottom: 20px;
-}
-
-@media (max-width: 1490px) {
-  .storefront-primary-navigation {
-    margin-left: 30%;
-  }
-}
-
-@media (max-width: 1100px) {
-  .storefront-primary-navigation {
-    margin-left: 15%;
-  }
-}
-
-/*Small Screen Menu Styling, Small Screen hamburger Menu*/
-
-@media (max-width: 750px) {
-  .storefront-primary-navigation {
-    margin-left: 0;
-  }
-  button.menu-toggle {
-    background-color: rgb(0, 174, 239);
-    margin-right: 20px;
-    font-size: 2em;
-  }
-
-  button.menu-toggle span::before, button.menu-toggle::after, button.menu-toggle::before {
-    width: 30px;
-    height: 3px;
-    margin-top: 2px;
-  }
 }
 
 /******
-Header Styling
+Colors
 ******/
 /******
-Home page Content section
+Break Points
 ******/
+#primary {
+  margin-bottom: 0 !important;
+}
 
 .site-main {
   margin-top: 20px;
 }
 
-.post-58 {
+#post-58 {
   border-bottom: solid 20px black;
+  padding-top: 2.617924em;
 }
 
 .entry-title {
@@ -167,23 +183,26 @@ Home page Content section
 .home-welcome-intro {
   padding-top: 100px;
   color: white;
+  margin: 0 10%;
 }
 
 .home-welcome-intro h2, .home-welcome-intro p {
   color: white;
 }
 
-@media (max-width: 1500px) {
+@media screen and (max-width: 1500px) {
   .home-welcome-intro img {
     max-width: 70%;
   }
 }
-
+/*New In section*/
+.storefront-recent-products {
+  margin: 0 10%;
+}
 
 /*Trail features section*/
-
 .home-trail-title {
-  text-align: center;
+  margin-left: 10%;
 }
 
 .home-trail-features {
@@ -191,16 +210,26 @@ Home page Content section
   flex-direction: column;
   justify-content: flex-end;
   background-image: url(https://cinicbikegear.com/wp-content/uploads/2018/08/hero-img-2.jpg);
-  padding: 20px;
+  padding: 10%;
   border-bottom: solid 20px black;
   max-height: 960px;
 }
 
 .home-trail-box {
-  width: 400px;
   background-color: rgba(0, 0, 0, 0.5);
-  margin-left: 60%;
   padding: 20px;
+  margin-left: auto;
+  max-width: 470px;
+}
+@media screen and (min-width: 768px) {
+  .home-trail-box {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .home-trail-box {
+    margin-left: 60%;
+  }
 }
 
 .home-trail-img {
@@ -211,26 +240,9 @@ Home page Content section
   color: white;
 }
 
-@media (max-width: 1100px) {
-  .home-trail-box {
-    margin-left: auto;
-
-  }
-}
-
-@media (max-width: 750px) {
-  .home-trail-box {
-    margin: auto;
-    width: auto;
-  }
-}
-
 /*Home page feature video styling*/
-
-
 .home-trail-video {
-  text-align: center;
-  margin-top: 20px;
+  margin: 0 10%;
 }
 
 .home-video {
@@ -241,65 +253,82 @@ Home page Content section
   background-image: url(https://cinicbikegear.com/wp-content/uploads/2018/09/checkerboard.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  border-bottom: solid 20px black;
+}
+@media screen and (min-width: 768px) {
+  .home-video {
+    flex-direction: column;
+  }
+}
+
+.home-video-content {
+  padding: 0 10%;
+}
+@media screen and (min-width: 768px) {
+  .home-video-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .home-video-text {
   color: white;
-  padding: 20px;
+  padding: 20px 0;
+}
+@media screen and (min-width: 768px) {
+  .home-video-text {
+    margin-right: 40px;
+  }
 }
 
 .home-video-video {
-
+  display: flex;
+  align-items: center;
   height: 100%;
-  width:45%;
-  padding: 20px;
 }
-
-@media (max-width: 750px) {
-  .home-video {
-    flex-direction: column;
-  }
-
+@media screen and (min-width: 768px) {
   .home-video-video {
     height: 50%;
+    width: 45%;
     width: auto;
   }
 }
 
 /******
-Home Page Content section
+Colors
 ******/
-
 /******
-Shop Page Content section
+Break Points
 ******/
-
 .post-type-archive .site .site-content .col-full {
   margin-left: 10%;
   margin-right: 10%;
 }
 
-/******
-Shop Page Content section
-******/
+.woocommerce-products-header {
+  margin-top: 100px;
+}
 
-/******
-Product Item Styling
-******/
-
-.woocommerce-tabs {
-  max-width: 960px;
-  margin: auto;
+.storefront-sorting ~ .storefront-sorting {
+  opacity: 0;
 }
 
 /******
-Product Item Styling
+Colors
 ******/
 /******
-About Page Styling
+Break Points
 ******/
+.product {
+  margin: 100px 10% 0 10%;
+}
 
+/******
+Colors
+******/
+/******
+Break Points
+******/
 .hentry .wp-post-image {
   width: 100%;
   margin-top: -110px;
@@ -311,55 +340,11 @@ About Page Styling
   }
 }
 /******
-About Page Styling
+Colors
 ******/
 /******
-Contact Page styling
+Break Points
 ******/
-
-.post-60 {
-  margin-top: 100px;
-}
-
-.content-statment {
-  max-width: 900px;
-  margin: auto;
-  text-align: center;
-}
-
-/******
-Contact Page styling
-******/
-
-/******
-Blog Page styling
-******/
-.post {
-  margin-top: 100px;
-  margin-left: 20px;
-}
-
-/******
-Blog Page styling
-******/
-
-/******
-Privacy Policy Page styling
-******/
-
-.pp-margin {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-/******
-Privacy Policy styling
-******/
-
-/******
-Footer Styling section
-******/
-
 .site-footer {
   background-color: rgb(0, 174, 239);
   padding-left: 10%;
@@ -372,7 +357,7 @@ Footer Styling section
   font-weight: 700 !important;
 }
 
-.footer-widgets, .widget .widget-title  {
+.footer-widgets, .widget .widget-title {
   border-bottom: 2px solid black;
 }
 
@@ -384,14 +369,12 @@ Footer Styling section
   text-align: center;
 }
 
-.site-info a {
+.widget_nav_menu ul li {
+  padding-left: 0;
+}
+
+.site-info span, .site-info a, br, .widget_nav_menu ul li::before {
   display: none;
 }
 
-.widget_nav_menu ul li::before {
-  display: none;
-}
-
-/******
-Footer Styling section
-******/
+/*# sourceMappingURL=style.css.map */

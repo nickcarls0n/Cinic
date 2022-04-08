@@ -1,0 +1,22 @@
+/*
+ Theme Name:   Cinic Bike Gear
+ Theme URI:    https://cinicbikegear.com
+ Description:  Cinic Bike Gear Store Front Theme
+ Author:       Nick Carlson
+ Author URI:   https://ncarlsondesign.com/
+ Template:     storefront
+ Version:      1.0.0
+*/
+
+@use 'variables';
+@use 'global';
+@use 'header';
+@use 'home';
+@use 'shop';
+@use 'product';
+@use 'about';
+@use 'footer';
+
+
+@import url("../storefront/style.css");
+

@@ -33,7 +33,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 		<div class="home-trail-title">
-			<h2>Trail Features</h2>
 		</div>
 		<div class="home-trail-features">
 			<div class="home-trail-box">
@@ -44,14 +43,15 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="home-trail-video">
-			<h2>Videos From The Trail</h2>
 		</div>
 		<div class="home-video">
-			<div class="home-video-text">
-				<?php the_field('video_feature_text')?>
-			</div>
-			<div class="home-video-video">
-				<?php the_field('video_feature')?>
+			<div class="home-video-content">
+				<div class="home-video-text">
+					<?php the_field('video_feature_text')?>
+				</div>
+				<div class="home-video-video">
+					<?php the_field('video_feature')?>
+				</div>
 			</div>
 		</div>
 	</div><!-- #primary -->
