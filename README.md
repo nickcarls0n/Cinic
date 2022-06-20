@@ -1,10 +1,10 @@
 # Cinic WodPress Theme
 
-Contributor: nickcarls0n
+![Cinic theme screenshot](/img/github-screenshot.png?raw=true "Cinic screenshot")
 
 **About The Theme**
 
-This them was developed to show case the Cinic brand in an exciting and unique way. Using the StoreFront theme as a parent theme the Cinic theme leverages some of the store functions of StoreFront while adding the look and feel of the Cinic brand. 
+This theme was developed to showcase the Cinic brand in an exciting and unique way. Using the StoreFront theme as a parent theme the Cinic theme leverages some of the store functions of StoreFront while adding the look and feel of the Cinic brand. Visit the live site at [cinicbikegear.com](https://cinicbikegear.com/).
 
 **Making Changes**
 
